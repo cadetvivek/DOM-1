@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1 id="heading">i am Before Click</h1>
+    <button  id="btn">Button</button>
+
+
+</body>
+<script>
+    // i am after Click
+    let myTextChanger = document.getElementById('btn')
+    let myHeading = document.getElementById('heading')
+    // how to get element text
+    let text = myHeading.innerText
+    console.log(text)
+    // how to add click here
+    myTextChanger.addEventListener('click',headingText)
+    function headingText(){
+        myHeading.innerText='i am after click'
+    }
+    </script>
+</html>
